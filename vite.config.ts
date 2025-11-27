@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/online_ticket_booking/',   // ⭐ REQUIRED for GitHub Pages
   optimizeDeps: {
-    exclude: ['lucide-react'], // prevents dependency pre-bundling crash
+    exclude: ['lucide-react'],
   },
   server: {
-    host: true,          // allows LAN / mobile preview
-    port: 5173,          // default vite port
+    host: true,
+    port: 5173,
   },
-});
+})
