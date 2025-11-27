@@ -34,7 +34,7 @@ jobs:
       # Configure Git identity
       - name: Configure Git
         run: |
-          git config --global user.name "online_ticket_booking"
+          git config --global user.name "2300033746"
           git config --global user.email "2300033746@kluniversity.in"
 
       # Deploy to GitHub Pages
@@ -42,7 +42,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "online_ticket_booking"
+          git config --global user.name "2300033746"
           git config --global user.email "2300033746@kluniversity.in"
           npm install -g gh-pages
-          gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/2300033746/online_ticket_booking.git
+          gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@https://github.com/2300033746/online_ticket_booking.git
